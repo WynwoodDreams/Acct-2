@@ -44,8 +44,9 @@ export default function Dashboard({ commitments, profile, onMark, onEdit, onDele
   if (commitments.length === 0) {
     return (
       <div>
-        <div className="dashboard-empty">
-          <p>No commitments yet. Start by adding something you want to follow through on.</p>
+        <div className="card dashboard-empty">
+          <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>~</div>
+          <p>No commitments yet.<br />Start by adding something you want to follow through on.</p>
           <button className="btn btn-primary" onClick={onAdd}>Add Your First Commitment</button>
         </div>
 

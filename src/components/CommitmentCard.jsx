@@ -80,7 +80,7 @@ export default function CommitmentCard({ commitment, today, onMark, onEdit, onDe
           </>
         )}
         {todayStatus && (
-          <span className="chip" style={{ textTransform: 'capitalize' }}>
+          <span className={`chip ${todayStatus === 'done' ? 'chip-done' : todayStatus === 'missed' ? 'chip-missed' : ''}`} style={{ textTransform: 'capitalize' }}>
             Today: {todayStatus}
           </span>
         )}
